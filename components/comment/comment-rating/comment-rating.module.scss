@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    margin-top: 16px;
+
+    .backdrop {
+        svg {
+            width: 24px;
+            fill: #fff;
+            margin-right: 12px;
+        }
+    }
+    .stars {
+        position: absolute;
+
+        svg {
+            width: 24px;
+            fill: #FFBC1F;
+            margin-right: 12px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        margin-top: 8px;
+
+        .backdrop {
+            svg {
+                margin-right: 8px;
+            }
+        }
+        .stars {
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+}

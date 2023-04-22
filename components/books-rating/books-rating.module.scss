@@ -1,0 +1,38 @@
+.wrapper {
+    position: relative;
+    width: 144px;
+
+    .rating_items{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        
+        .rating_label:hover,
+        .rating_label:hover ~ .rating_label {
+            svg {
+                fill: #FFBC1F;
+                transition: fill 0.5s;
+            }
+        }
+        .rating_item {
+            display: none;
+        }
+
+        .rating_label {
+            cursor: pointer;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.rating_item:checked,
+.rating_item:checked ~ .rating_label {
+    svg {
+        fill: #FFBC1F;
+        transition: fill 0.5s;
+    }
+}
+
+

@@ -1,0 +1,42 @@
+.books_page_wrapper {
+    width: 825px;
+    margin: 60px auto;
+
+    .content_wrapper {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px 22px;
+    }
+
+    .content_wrapper_list {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .books_page_wrapper {
+        width: 640px;
+
+        .content_wrapper{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 35px 32px;
+        }
+    }
+    
+}
+
+@media (max-width: 360px) {
+    .books_page_wrapper {
+        margin-top: 8px;
+        .content_wrapper{
+            width: 288px;
+            display: block;
+            margin-top: 0;
+        }
+        .content_wrapper_list {
+            margin-top: 0px;
+        }
+    }
+    
+}

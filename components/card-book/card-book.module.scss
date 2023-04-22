@@ -1,0 +1,49 @@
+.card_item {
+  position: relative;
+  width: 190px;
+  height: 470px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+}
+
+.card_list_item {
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  padding: 24px 24px 24px 16px;
+}
+
+@media (max-width: 768px) {
+  .card_list_item {
+    .card_list_wrapper {
+      .content_card_list {
+        width: 464px;
+
+        .book_list_author {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .card_item {
+    margin-top: 16px;
+    width: 288px;
+  }
+
+  .card_list_item {
+    padding: 16px 16px 16px 8px;
+
+    .list_book_img {
+      div {
+        width: 70px;
+        height: 100px;
+      }
+    }
+  }
+}

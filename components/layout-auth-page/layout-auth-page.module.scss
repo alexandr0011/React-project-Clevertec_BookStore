@@ -1,0 +1,25 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+}
+
+.logo {
+  margin: 180px 0 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .logo {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

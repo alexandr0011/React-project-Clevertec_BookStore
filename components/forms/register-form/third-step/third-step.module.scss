@@ -1,0 +1,134 @@
+.third_step_wrapper {
+  position: relative;
+  margin-bottom: 16px;
+
+  .phone_input_wrapper {
+    position: relative;
+    border-bottom: 1px solid #bfc4c9;
+    height: 57px;
+    margin-bottom: 32px;
+
+    .phone_input {
+      width: 100%;
+      height: 56px;
+      padding-left: 12px;
+      padding-top: 15px;
+      background: #f9f9fa;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+    .phone_placeholder {
+      position: absolute;
+      left: 12px;
+      top: 20px;
+      transition: 0.3s;
+    }
+    .phone_input:focus ~ .phone_placeholder {
+      left: 12px;
+      top: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #a7a7a7;
+    }
+    .touched_input {
+      left: 12px;
+      top: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #a7a7a7;
+    }
+  }
+  .email_input_wrapper {
+    position: relative;
+    border-bottom: 1px solid #bfc4c9;
+    height: 57px;
+    margin-bottom: 68px;
+
+    .email_input {
+      width: 100%;
+      height: 56px;
+      padding-left: 12px;
+      padding-top: 15px;
+      background: #f9f9fa;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+    .email_placeholder {
+      position: absolute;
+      left: 12px;
+      top: 20px;
+      transition: 0.3s;
+    }
+    .email_input:focus ~ .email_placeholder {
+      left: 12px;
+      top: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #a7a7a7;
+    }
+    .touched_input {
+      left: 12px;
+      top: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      color: #a7a7a7;
+    }
+  }
+
+  .red_border {
+    border-bottom: 1px solid #F42C4F;
+  }
+
+  .gray {
+    color: rgb(167, 167, 167);
+  }
+
+  .error {
+    padding-left: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #f42c4f;
+  }
+
+  .steps {
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+
+  .form_btn {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 320px) {
+  .third_step_wrapper {
+    .phone_input_wrapper {
+      margin-bottom: 42px;
+    }
+    .email_input_wrapper {
+      margin-bottom: 68px;
+    }
+    .form_btn {
+      height: 40px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

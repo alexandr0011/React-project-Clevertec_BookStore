@@ -1,0 +1,98 @@
+.about_book_wrapper {
+    margin: 62px 0;
+
+    .about_book_title {
+        max-width: 350px;
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #EBEBEB;;
+    }
+
+    .about_book_info_container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        .about_book_info_section {
+            .about_book_info_section_item {
+                display: flex;
+                font-weight: 600;
+                font-size: 16px;
+                color: #A7A7A7;
+                padding-top: 16px;
+
+                div {
+                    min-width: 190px;
+                }
+
+                p {
+                    line-height: 24px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #363636;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about_book_wrapper {
+        margin: 52px 0;
+
+        .about_book_title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .about_book_info_container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .about_book_info_section {
+                .about_book_info_section_item {
+                    font-weight: 600;
+                    font-size: 14px;
+
+                    div {
+                        min-width: 138px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .about_book_wrapper {
+        margin: 24px 0 42px;
+
+        .about_book_title {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .about_book_info_container {
+            display: block;
+
+            .about_book_info_section {
+                .about_book_info_section_item {
+                    font-weight: 500;
+                    font-size: 12px;
+
+                    div {
+                        min-width: 129px;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

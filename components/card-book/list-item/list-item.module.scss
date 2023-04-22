@@ -1,0 +1,119 @@
+.card_list_wrapper {
+  display: flex;
+
+  .list_book_img {
+    width: 120px;
+    height: 170px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: top;
+    }
+  }
+
+  .content_card_list {
+    width: 649px;
+    margin-left: 16px;
+
+    .book_list_title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 8px;
+    }
+
+    .book_list_author {
+      font-size: 16px;
+      color: #727272;
+      margin-bottom: 24px;
+    }
+
+    .list_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .book_list_rating {
+        color: #a7a7a7;
+      }
+
+      .book_list_btn {
+        .card_list_btn {
+          width: 174px;
+          height: 40px;
+          background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+          border-radius: 20px;
+          cursor: pointer;
+          border: none;
+          font-weight: 600;
+          font-size: 12px;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card_list_item {
+    .card_list_wrapper {
+      .content_card_list {
+        width: 464px;
+
+        .book_list_author {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .card_list_wrapper {
+    .list_book_img {
+      width: 70px;
+      height: 100px;
+    }
+    .content_card_list {
+      width: 186px;
+      margin-left: 8px;
+
+      .book_list_title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 3px;
+      }
+
+      .book_list_author {
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+
+      .list_container {
+        display: block;
+
+        .book_list_rating {
+          margin-bottom: 16px;
+          div {
+            width: 104px;
+            svg {
+              width: 16px;
+            }
+          }
+        }
+
+        .book_list_btn {
+          .card_list_btn,
+          .card_list_btn_reserved {
+            width: 186px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.message_wrapper {
+  width: 825px;
+  text-align: center;
+
+  h2 {
+    margin-top: 200px;
+    font-size: 32px;
+    color: #a7a7a7;
+  }
+}
+
+@media (max-width: 768px) {
+  .message_wrapper {
+    width: 640px;
+    h2 {
+      margin-top: 226px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .message_wrapper {
+    width: 288px;
+    h2 {
+      margin-top: 134px;
+      font-size: 18px;
+    }
+  }
+}

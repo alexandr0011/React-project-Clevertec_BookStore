@@ -1,0 +1,41 @@
+.message {
+  width: 600px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 189px auto 0;
+  .wrapper {
+    text-align: center;
+    margin: 0 auto;
+    padding: 48px 0;
+    width: 416px;
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 32px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .message {
+    margin-top: 147px;
+    width: 288px;
+    .wrapper {
+      width: 256px;
+      padding: 42px 0 32px;
+      h1 {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
